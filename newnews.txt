@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Auto Loading Bootstrap Modal on Page Load</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+	
+$(function(){
+    $('#btnSignUp').click(function() {
+        alert("Hello"+$("#countryName").val());
+		var countryName=$("#countryName").val();
+		var countryCapital=$("#countryCapital").val();
+		var countryPopulation=$("#countryPopulation").val();
+		
+		/*var country = {
+	            countryName: countryName,
+	            population:countryPopulation,
+	            capital:countryCapital
+	        }
+		*/
+		$.ajax({
+		  type: 'POST',
+		  url: "http://localhost:8080/Country_Management/rest/countryAPI/countries/new",
+		  contentType: "application/json",
+	        dataType: "json",
+	        async: false,
+		  
+		  data:JSON.stringify({"countryName":countryName,
+	            "population":countryPopulation,
+	            "capital":countryCapital
+	      	}),
+		  
+		  success: function(resultData) {
+			  alert("Inside success");
+			  $("#btnSignUp").attr("data-target","#successModal");			
+			},
+		  error: function(){
+			  alert("Inside error");
+			  $("#btnSignUp").attr("data-target","#errorModal");			
+		  }
+		});
+    });
+});
+	
+</script>
+</head>
+<body>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title" id="myModalLabel"><i class="fa fa-share-alt"></i> NewsLetter</h4>
+			  </div>
+			  <div class="modal-body">								            
+						<p>More events, games, app comming soon...</p>						
+						<form action="" method="post">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+								<input type="email" class="form-control" placeholder="your@email.com">
+								<input type="hidden" name="countryName" id="countryName" value="India">
+								<input type="hidden" name="countryCapital" id="countryCapital" value="New Delhi">
+								<input type="hidden" name="countryPopulation" id="countryPopulation" value="1000">
+								<button id="btnSignUp" data-toggle="modal"  class="btn btn-default" type="submit">Sign Up</button>
+							</div>                   
+					  </form>
+			  </div>
+			  <div class="modal-footer">
+				<!-- <a href="#" id="btnSignUp" data-toggle="modal" data-target="#successModal" class="btn btn-default"><i class="fa fa-plus"></i> Sign Up</a> -->
+				<button id="btnSignUp" data-toggle="modal" data-target="#upload-avatar" class="btn btn-default" >Sign Up</button>
+			  </div>
+			</div>
+		</div>	  
+		<!--Success Modal-->
+		<div class="modal" id="successModal" tabindex="-1" role="dialog" aria-labelledby="upload-avatar-title" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				  <h4 class="modal-title" id="upload-avatar-title">Success</h4>
+				</div>
+				<div class="modal-body">
+				  <p>Thank you for subscription...</p>          
+				</div>
+				<div class="modal-footer">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- Failure modal -->
+		<div class="modal" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="upload-avatar-title" aria-hidden="true">
+			<div class="modal-dialog">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				  <h4 class="modal-title" id="upload-avatar-title">Error</h4>
+				</div>
+				<div class="modal-body">
+				  <p>Sorry, Something went wrong...</p>          
+				</div>
+				<div class="modal-footer">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+	</div>
+</body>
+</html>                                		
+                              		
