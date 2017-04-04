@@ -1,0 +1,107 @@
+
+<!DOCTYPE HTML>
+<html>
+    
+    
+    
+<!--Avi code starts-->
+<div id="request" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+            
+			<div align="center" class="Network_On-Black3" style="font-family: Arial, Helvetica, sans-serif;font-size: 13px;color: #293F6a;text-align: center;font-weight: bold;">MORE EVENTS, CHALLENGES AND GAMES COMING SOON. |  Would you like updates?
+          </div>
+ 
+          </div>
+          <div align="center">
+<form class="lpeRegForm formNotEmpty form-request js-ajax-form" method="post" enctype="application/x-www-form-urlencoded"  id="mktForm_1729" name="mktForm_1729" style="padding:0px;margin:0px;" target="_top">
+<div class="input-group" align="center" style="
+    align-items: center;
+">
+<span class="mktInput">	<input onfocus="javascript:clearEmailForm();" tabindex="1" maxlength="255" name="Email" size="30" placeholder="Enter Email Address" style="width: 302px;" class="mktFormText mktFormEmail mktFReq Network_On-Black3 form-control b-primary" type="email" id="mc-email">
+
+ <span class="input-group-btn">
+                    <button class="btn" type="submit" style="background-color: #e6b523;color: white;font-weight: 700;" onclick="formSubmit(document.getElementById(" return=""><i class="text-white fa fa-envelope" style="color: white;"></i> SIGN UP</button>
+                    </span></span><span class="mktFormMsg"></span>
+</div>
+
+  <span style="display:none;">
+  <input type="text" name="_marketo_comments" value=""></span>
+    <input type="hidden" name="lpId" value="5589">
+    <input type="hidden" name="subId" value="217">
+    <input type="hidden" name="munchkinId" value="709-HGB-925">
+    <input type="hidden" name="kw" value="">
+    <input type="hidden" name="cr" value="">
+    <input type="hidden" name="searchstr" value="">
+    <input type="hidden" name="lpurl" value="http://info.flukenetworks.com/NetworkOnSubscribe.html?cr={creative}&amp;kw={keyword}">
+    <input type="hidden" name="formid" value="1729">
+    <input type="hidden" name="returnURL" value="http://www.flukenetworks.com/network-on/subscribed">
+    <input type="hidden" name="retURL" value="http://www.flukenetworks.com/network-on/subscribed">
+    <input type="hidden" name="returnLPId" value="-1">
+    <input type="hidden" name="_mkt_disp" value="return">
+    <input type="hidden" name="_mkt_trk" value="id:709-HGB-925&amp;token:_mch-127.0.0.1-1490590894069-69119">
+  </form></div>
+
+        </div>
+    </div>
+  </div>
+<!--  Avi code ends-->
+  <!-- Modals success -->
+
+  <div id="success" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <h2 class="modal-title">Thank you</h2>
+            <p class="modal-subtitle">Your message is successfully sent...</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modals error -->
+<!--Original code starts
+  <div id="error" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+             <h2 class="modal-title">Sorry</h2>
+            <p class="modal-subtitle"> Something went wrong </p>
+          </div>
+        </div>
+    </div>
+  </div>
+Original code ends-->
+
+<!--Avi code for error start-->
+<div id="error" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+              <p class="modal-subtitle"> Thank you for subscribing </p>
+          </div>
+        </div>
+    </div>
+  </div>
+<!--Avi code for error ends>
+<!-- Scripts -->
+    
+<link href="css/style.css" rel="stylesheet"  media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet"  media="screen">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+    
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#request').modal('show');
+    });
+</script>
+    
+    </html>
