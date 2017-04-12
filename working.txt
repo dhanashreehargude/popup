@@ -1,0 +1,323 @@
+   
+<!--Modal-->
+<div id="request" class="modal fade" role="dialog">
+    <div class="modal-dialog" >
+        <div class="modal-content" >
+          <div class="modal-header" style="border-bottom: white;">
+            <span class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+            
+			<div align="center" class="Network_On-Black3" style="font-family: Arial, Helvetica, sans-serif;font-size: 13px;color: #293F6a;text-align: center;font-weight: bold;">MORE EVENTS, CHALLENGES AND GAMES COMING SOON. |  Would you like updates?
+          </div>
+ 
+          </div>
+          <div align="center">
+ <script type="text/javascript">
+ var mktoPreFillFields = {"Email":null};
+</script>
+
+<!-- SYSTEM CSS - DO NOT EDIT -->
+<link rel="stylesheet" type="text/css" media="screen" href="http://info.flukenetworks.com/css/mktLPSupport.css" />
+<style type="text/css">
+#bodyId {
+  margin: 0px;
+  padding: 0px;
+}
+
+.input[type=email]:focus {
+    outline: none !important;
+    border:1px solid ##e6b523;
+    box-shadow: 0 0 10px ##e6b523;
+}
+
+div#outerWrapDiv {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+div#innerWrapDiv {
+  position: relative;
+  padding: 0px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+span.mktFormMsg {
+  clear:both; 
+}
+
+</style>
+
+<!-- START TEMPLATE CSS - EDIT THIS SECTION -->
+
+<style>
+/* Note: You can also change these in the specific Landing Pages*/
+
+/* Width of Full Page */
+div#innerWrapDiv {
+  width: 325px;
+  }
+
+/* Main Content Area - Controls height of page */
+div#mktContent {
+  position: relative;
+  height: 450px;
+  width: 325px; }
+
+
+</style>
+
+<!-- END TEMPLATE CSS -->
+
+
+
+
+
+<!-- SYSTEM JAVASCRIPT - DO NOT EDIT -->
+<script type="text/javascript">
+function fieldValidate(field) {
+  /* call Mkto.setError(field, message) and return false to mark a field value invalid */
+  /* return 'skip' to bypass the built-in validations */
+  return true;
+}
+function getRequiredFieldMessage(domElement, label) {
+  return "This field is required";
+}
+function getTelephoneInvalidMessage(domElement, label) {
+  return "Please enter a valid telephone number";
+}
+function getEmailInvalidMessage(domElement, label) {
+  return "Please enter a valid email address";
+}
+</script>
+
+<script type="text/javascript" src="http://info.flukenetworks.com/js/public/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://info.flukenetworks.com/rs/fluke/images/stateCountryPlusAustralia.js"></script>
+
+<script type="text/javascript">
+    // set no conflict mode for jquery
+  var $jQ = jQuery.noConflict();
+
+  $jQ(document).ready(function(){
+      // all form submits will open in a new window
+      $jQ('.lpeRegForm').attr('target','_top');
+		
+      var ridUrl = getQueryVariable("retid");
+      var rUrl = getQueryVariable("ret");
+	  
+      if (ridUrl) {
+         ridUrl = "http://myaccount.flukenetworks.com/FNet/en-us/findit?Document="+ridUrl;
+         $jQ("input[name='returnURL']").attr('value',ridUrl );
+         $jQ("input[name='retURL']").attr('value',ridUrl );
+      } else if (rUrl) {
+         $jQ("input[name='returnURL']").attr('value',rUrl );
+         $jQ("input[name='retURL']").attr('value',rUrl );
+      }
+  });
+
+function getQueryVariable(variable) { 
+  var query = window.location.search.substring(1); 
+  var vars = query.split("&"); 
+  for (var i = 0; (i<vars.length); i++) { 
+    var pair = vars[i].split("="); 
+    if (pair[0] == variable) { 
+      return unescape(pair[1]); 
+    } 
+  } 
+  return false; 
+}
+</script>
+
+
+<!-- SYSTEM INCLUDES - DO NOT EDIT -->
+<link rel="stylesheet" type="text/css" media="screen" href="http://info.flukenetworks.com/css/mktLPSupport.css" />
+<style type="text/css"> div#lpeCDiv_6663 {position: absolute; left: 0; top: 0; z-index: 15; }
+   div#lpeCDiv_6663 span.lpContentsItem { }
+
+</style>
+<style type="text/css"> .marketoContent {position: relative;} </style>
+<script type="text/javascript" src="//b2c-mlm.marketo.com/jsloader/efa80e1e-483c-4600-874d-bfef6db9cb8f/loader.php.js"></script> <span class='lpContentsItem formSpan'>
+  <div id="socialSignOnHoldingPen" class="cf_widget cf_widget_socialsignon">
+    <script type="text/javascript" src="http://info.flukenetworks.com/js/mktFormSupport.js"></script>
+    
+  <script type="text/javascript">
+  var formEdit = false;
+
+  var socialSignOn = {
+    isEnabled: false,
+    enabledNetworks: [''],
+    cfId: '',
+    codeSnippet: ''
+  };
+</script>
+    
+  </div>
+  <style type='text/css'>form.lpeRegForm ul {font-size: 12px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul input {font-size: 12px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul input[type='text'] {font-size: 12px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul textarea {font-size: 12px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul select {font-size: 12px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm li {margin-bottom: 10px; } form.lpeRegForm .mktInput {padding-left: 0px; } form.lpeRegForm label {width: 90px; } form.lpeRegForm input.mktFormText {width: 150px; } form.lpeRegForm textarea {width: 150px; } form.lpeRegForm select {width: 154px; } </style><!--[if IE]><style type='text/css'>form.lpeRegForm li {margin-bottom: 8px; } form.lpeRegForm select {width: 156px; } </style><![endif]-->
+  <script type="text/javascript">
+var profiling = {
+  isEnabled: false,
+  numberOfProfilingFields: 3,
+  alwaysShowFields: [ 'mktDummyEntry']
+};
+var mktFormLanguage = 'English'
+
+function clearEmailForm() {
+	if(document.mktForm_1729.Email.value == "Enter Email Address") {
+		document.mktForm_1729.Email.value = "";
+	}
+}
+</script>
+  <script type="text/javascript"> function mktoGetForm() {return document.getElementById('mktForm_1729'); }</script>
+ 
+<div align="center">
+<form class="lpeRegForm formNotEmpty" method="post" enctype="application/x-www-form-urlencoded" action="http://info.flukenetworks.com/index.php/leadCapture/save" id="mktForm_1729" name="mktForm_1729" style="padding:0px;margin:0px;" target="_top">
+<div class="input-group" align="center" style="
+    align-items: center;
+">
+<span class="mktInput">	<input onfocus="javascript:clearEmailForm();" tabindex="1" maxlength="255" name="Email" size="30" placeholder="Enter Email Address" style="width: 302px;border: 1px solid #ccc;" class="mktFormText mktFormEmail mktFReq Network_On-Black3 form-control b-primary" type="email" id="mc-email">
+
+ <span class="input-group-btn">
+                    <button class="btn" type="submit" style="background-color: #e6b523;color: white;font-weight: 700;height: 35px;" onclick='formSubmit(document.getElementById("mktForm_1729")); return false;'><i class="text-white fa fa-envelope" style="color: white;"></i> SIGN UP</button>
+                    </span></span><span class="mktFormMsg"></span>
+</div>
+
+  <span style="display:none;">
+  <input type="text" name="_marketo_comments" value=""></span>
+    <input type="hidden" name="lpId" value="5589">
+    <input type="hidden" name="subId" value="217">
+    <input type="hidden" name="munchkinId" value="709-HGB-925">
+    <input type="hidden" name="kw" value="">
+    <input type="hidden" name="cr" value="">
+    <input type="hidden" name="searchstr" value="">
+    <input type="hidden" name="lpurl" value="http://info.flukenetworks.com/NetworkOnSubscribe.html?cr={creative}&amp;kw={keyword}">
+    <input type="hidden" name="formid" value="1729">
+    <input type="hidden" name="returnURL" value="http://www.flukenetworks.com/network-on/subscribed">
+    <input type="hidden" name="retURL" value="http://www.flukenetworks.com/network-on/subscribed">
+    <input type="hidden" name="returnLPId" value="-1">
+    <input type="hidden" name="_mkt_disp" value="return">
+    <input type="hidden" name="_mkt_trk" value="id:709-HGB-925&amp;token:_mch-127.0.0.1-1490590894069-69119">
+  </form></div>
+  <script type="text/javascript" src="http://info.flukenetworks.com/js/mktFormSupport.js"></script>
+  <script type="text/javascript">
+function formSubmit(elt) {
+	if(document.mktForm_1729.Email.value == "") {
+		alert("Enter an email address");
+		return false;
+	} else {
+		return Mkto.formSubmit(elt);
+	}
+}
+function formReset(elt) {
+  return Mkto.formReset(elt);
+}
+</script>
+</span>
+
+
+
+
+<!-- START TEMPLATE HTML - EDIT THIS SECTION -->
+<!-- Base of Landing Page Content -->
+
+
+<!-- END TEMPLATE HTML -->
+
+
+
+
+
+<!-- SYSTEM FOOTER - DO NOT EDIT --><script type="text/javascript" src="https://ssl-munchkin.marketo.net/js/munchkin.js"></script><script>mktoMunchkin('709-HGB-925', {customName: 'NetworkOnSubscribe', wsInfo: 'j1RR'});</script>
+
+<!--Google -->
+<meta name="google-site-verification" content="yH4QxKQIuhIR0gYw8o50ubbthoG-v6TadOK02RbmuWQ" />
+
+
+<!-- GOOGLE ANALYTICS -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2516024-1']);
+  _gaq.push(['_setDomainName', 'flukenetworks.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- GOOGLE ANALYTICS ORIGINAL.  ENTER YOUR CODE and UNCOMMENT block -->
+<!--
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "YOURCODE";
+urchinTracker();
+</script>
+--></div>
+
+        </div>
+    </div>
+  </div>
+
+
+   <!-- Modals error -->
+<div id="error" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+              <p class="modal-subtitle"> Thank you for subscribing </p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Scripts -->
+
+    <script src="js/jquery.min.js"></script>
+
+  <link href="css/style.css" rel="stylesheet"  media="screen">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet"  media="screen">
+
+<script src="js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    $(window).load(function(){
+
+        $('#request').modal('show');
+    });
+</script>
+
+<!--
+
+<script>
+	jQuery(document).ready(function() {
+		// Look for the hideNextGenLinkWare cookie which, if it exists, should only be set to "true".
+		var hideNextGenLinkWare = getCookie("hideNextGenLinkWare") ? getCookie("hideNextGenLinkWare") : "";
+
+		if(hideNextGenLinkWare != "true"){
+			// If hideNextGenLinkWare cookie is not stored and set to "true" then do the following:
+			// 1) show fancy-box content
+			// 2) create a hideNextGenLinkWare cookie and set to "true" (expire 30 days)
+
+			$("#fancy-box-auto-launch").trigger('click'); // Show fancy box content
+
+			// Get domain name and set cookie
+			var tempDomain = location.host;
+			var domainName = tempDomain.split(".");
+			var countTemp = domainName.length;
+			var finalDomain = domainName[countTemp-2]+"."+domainName[countTemp-1];
+
+			setCookie("hideNextGenLinkWare","true",15,"/",finalDomain);
+                        
+                                              
+
+		}
+	});
+</script> -->
